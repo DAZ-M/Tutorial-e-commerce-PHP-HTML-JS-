@@ -14,7 +14,7 @@
     <h3>This is my first php document</h3>
     <p>This is a testing paragraph</p> -->
 
-    <header>
+    <header class="header">
         <div class="header_body">
             <a href="./index.php" class="logo">TechnoBlingBling</a>
             <nav class="navbar">
