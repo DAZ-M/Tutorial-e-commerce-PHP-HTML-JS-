@@ -26,7 +26,25 @@
             <a href="" class="icon"><i class="fa-solid fa-cart-shopping"><span><sup>4</sup></span></i></a>
             <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
         </div>
+    
     </header>
+    
+    <!-- Form section -->
+    <div class="container">
+        <section>
+            <h3 clas="heading">Add products</h3>
+            <form action="" class="add_product">
+                <!-- Input for product name -->
+                <input type="text" placeholder="Enter name" required class="input_fields">
+                <!-- Input for product price -->
+                <input type="number" min="0" placeholder="Enter price" required class="input_fields">
+                <!-- Input for product image -->
+                <input type="file" required class="input_fields">
+                <!-- Input submit button -->
+                <input type="submit" class="submit_btn" value="Add product">
+            </form>
+        </section>
+    </div> 
 
     <!-- js file here -->
     <script src="./js/script.js"></script>
