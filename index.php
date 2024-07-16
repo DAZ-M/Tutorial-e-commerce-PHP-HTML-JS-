@@ -12,6 +12,7 @@
 <body>
     <h1>Hello world!</h1>
     <h3>This is my first php document</h3>
+    <p>This is a testing paragraph</p>
     <!-- js file here -->
     <script src="./js/script.js"></script>
 </body>
