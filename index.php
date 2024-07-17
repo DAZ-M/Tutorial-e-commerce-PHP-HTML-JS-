@@ -12,6 +12,7 @@
 <body>
     <!-- Header section -->
     <?php include('header.php') ?>
+    <?php include('connect.php') ?>
     
     
     <!-- Form section -->
