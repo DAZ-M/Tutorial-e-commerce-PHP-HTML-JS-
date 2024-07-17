@@ -1,5 +1,5 @@
 <?php 
-    $connection = mysqli_connect('localhost', 'root', '', 'shopping_cart');
+    $connection = mysqli_connect('localhost', 'root', 'root', 'shopping_cart');
     if($connection){
         echo "Succesful";
     }else{
