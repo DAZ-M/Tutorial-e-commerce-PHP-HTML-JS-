@@ -1,3 +1,13 @@
+<?php include 'connect.php';
+    if(isset($_POST['add_product'])){
+        $product_name = $_POST['product_name'];
+        $product_price = $_POST['product_price'];
+        $product_image = $_POST['product_image'];
+
+        echo $product_name $product_price; 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
