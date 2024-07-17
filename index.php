@@ -12,22 +12,20 @@
 <body>
     <!-- Header section -->
     <?php include('header.php') ?>
-    <?php include('connect.php') ?>
-    
-    
+
     <!-- Form section -->
     <div class="container">
         <section>
             <h3 clas="heading">Add products</h3>
-            <form action="" class="add_product">
+            <form action="" class="add_product" method="post" enctype="multipart/form-data">
                 <!-- Input for product name -->
-                <input type="text" placeholder="Enter name" required class="input_fields">
+                <input type="text" name="product_name" placeholder="Enter name" required class="input_fields">
                 <!-- Input for product price -->
-                <input type="number" min="0" placeholder="Enter price" required class="input_fields">
+                <input type="number" name="product_price" min="0" placeholder="Enter price" required class="input_fields">
                 <!-- Input for product image -->
-                <input type="file" required class="input_fields">
+                <input type="file" name="product_image" required class="input_fields" accept="image/png, image/jpg, image/jpeg">
                 <!-- Input submit button -->
-                <input type="submit" class="submit_btn" value="Add product">
+                <input type="submit" name="add_product" class="submit_btn" value="Add product">
             </form>
         </section>
     </div> 
