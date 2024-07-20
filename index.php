@@ -3,7 +3,7 @@
         $product_name = $_POST['product_name'];
         $product_price = $_POST['product_price'];
         $product_image = $_FILES['product_image']['name'];
-        $product_image_temp_name=$_FILES['product-image']['tmp_name'];
+        $product_image_temp_name=$_FILES['product_image']['tmp_name'];
         $product_image_folder='images/'.$product_image;
 
         $insert_query=mysqli_query($connection, "insert into `products` (name,price,image) values
@@ -45,7 +45,7 @@
                     new elemnts to your html.
                 */
                 echo " <div class='display_message'>
-                        <span>'$display_image'</span>
+                        <span>'$display_message'</span>
                         <i class='fas fa-time' onclick='this.parentElement.style.display=`none`'></i>
                        </div>";
             }
