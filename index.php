@@ -11,8 +11,9 @@
 
         if($insert_query){
             move_uploaded_file($product_image, $product_image_folder);
+            $display_message="Product inserted succesfuly";
         }else{
-            echo "There was some error";
+            $display_message="There was some error at inserting a product";
         }
     }
 ?>
@@ -34,6 +35,21 @@
 
     <!-- Form section -->
     <div class="container">
+        <?php
+            /* Displays a message when a product is added */
+            if(isset($display_message) /* Checks that the variable is not null or undefined*/){
+                /* 
+                    The echo method  takes a string and turn it into a text node in the
+                    html file, so if you print actual html code you can just like that add 
+                    new elemnts to your html.
+                */
+                echo " <div class='display_message'>
+                        <span>'$display_image'</span>
+                        <i class='fas fa-time' onclick='this.parentElement.style.display=`none`'></i>
+                       </div>"
+            }
+        ?>
+
         <section>
             <h3 clas="heading">Add products</h3>
             <form action="" class="add_product" method="post" enctype="multipart/form-data">
