@@ -2,9 +2,18 @@
     if(isset($_POST['add_product'])){
         $product_name = $_POST['product_name'];
         $product_price = $_POST['product_price'];
-        $product_image = $_POST['product_image'];
+        $product_image = $_FILES['product_image']['name'];
+        $product_image_temp_name=$_FILES['product-image']['tmp_name'];
+        $product_image_folder='images/'.$product_image;
 
-        echo "$product_name $product_price"; 
+        $insert_query=mysqli_query($connection, "insert into `products` (name,price,image) values
+        ('$product_name', '$product_price', '$product_image')") or die("Insert query failed");
+
+        if($insert_query){
+            move_uploaded_file($product_image, $product_image_folder);
+        }else{
+            echo "There was some error";
+        }
     }
 ?>
 
