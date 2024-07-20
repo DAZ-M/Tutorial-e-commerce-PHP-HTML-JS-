@@ -45,7 +45,7 @@
                     new elemnts to your html.
                 */
                 echo " <div class='display_message'>
-                        <span>'$display_message'</span>
+                        <span>$display_message</span>
                         <i class='fas fa-time' onclick='this.parentElement.style.display=`none`'></i>
                        </div>";
             }
