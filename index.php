@@ -47,7 +47,7 @@
                 echo " <div class='display_message'>
                         <span>'$display_image'</span>
                         <i class='fas fa-time' onclick='this.parentElement.style.display=`none`'></i>
-                       </div>"
+                       </div>";
             }
         ?>
 
