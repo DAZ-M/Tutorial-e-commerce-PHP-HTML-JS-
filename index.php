@@ -37,7 +37,8 @@
     <div class="container">
         <?php
             /* Displays a message when a product is added */
-            if(isset($display_message) /* Checks that the variable is not null or undefined*/){
+            /* Checks that the variable is not null or undefined*/
+            if(isset($display_message)){
                 /* 
                     The echo method  takes a string and turn it into a text node in the
                     html file, so if you print actual html code you can just like that add 
