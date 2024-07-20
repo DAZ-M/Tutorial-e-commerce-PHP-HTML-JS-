@@ -10,7 +10,7 @@
         ('$product_name', '$product_price', '$product_image')") or die("Insert query failed");
 
         if($insert_query){
-            move_uploaded_file($product_image, $product_image_folder);
+            move_uploaded_file($product_image_temp_name, $product_image_folder);
             $display_message="Product inserted succesfuly";
         }else{
             $display_message="There was some error at inserting a product";
