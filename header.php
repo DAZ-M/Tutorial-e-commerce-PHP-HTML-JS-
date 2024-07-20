@@ -7,7 +7,7 @@
                 <a href="#">Shopit</a>
             </nav>
 
-            <a href="" class="icon"><i class="fa-solid fa-cart-shopping"><span><sup>4</sup></span></i></a>
+            <a href="" class="cart"><i class="fa-solid fa-cart-shopping"><span><sup>4</sup></span></i></a>
             <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
         </div>    
 </header>
