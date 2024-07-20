@@ -52,7 +52,7 @@
         ?>
 
         <section>
-            <h3 clas="heading">Add products</h3>
+            <h3 class="heading">Add products</h3>
             <form action="" class="add_product" method="post" enctype="multipart/form-data">
                 <!-- Input for product name -->
                 <input type="text" name="product_name" placeholder="Enter name" required class="input_fields">
