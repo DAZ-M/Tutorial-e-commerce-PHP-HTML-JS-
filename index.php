@@ -4,7 +4,7 @@
         $product_price = $_POST['product_price'];
         $product_image = $_POST['product_image'];
 
-        echo $product_name $product_price; 
+        echo "$product_name $product_price"; 
     }
 ?>
 
