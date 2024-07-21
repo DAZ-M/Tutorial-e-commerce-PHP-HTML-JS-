@@ -3,7 +3,7 @@
             <a href="./index.php" class="logo">TechnoBlingBling</a>
             <nav class="navbar">
                 <a href="index.php">Add Products</a>
-                <a href="view_product.php">View Products</a>
+                <a href="view_products.php">View Products</a>
                 <a href="#">Shopit</a>
             </nav>
 
