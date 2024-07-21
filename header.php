@@ -2,8 +2,8 @@
         <div class="header_body">
             <a href="./index.php" class="logo">TechnoBlingBling</a>
             <nav class="navbar">
-                <a href="#">Add Products</a>
-                <a href="#">View Products</a>
+                <a href="index.php">Add Products</a>
+                <a href="view_product.php">View Products</a>
                 <a href="#">Shopit</a>
             </nav>
 
