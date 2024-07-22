@@ -29,6 +29,16 @@
                     <th>Action</th>
                 </thead>
                 <tbody>
+                <!-- php code -->
+                <?php
+                    $display_product = mysqli_query($connection, 'Select * from `products`');
+                    if(mysqli_num_rows($display_product)>0){
+                        //logic to fetch data
+                        while($row=mysqli_fetch_assoc($display_product)){
+                            echo $row['name'].' ';
+                        }
+                    } 
+                ?>
                     <tr>
                         <td>1</td>
                         <td>Image</td>
