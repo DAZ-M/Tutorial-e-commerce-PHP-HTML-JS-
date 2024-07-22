@@ -35,20 +35,32 @@
                     if(mysqli_num_rows($display_product)>0){
                         //logic to fetch data
                         while($row=mysqli_fetch_assoc($display_product)){
-                            echo $row['name'].' ';
-                        }
-                    } 
+                            $product_id=$row['id'];
+                            $product_name=$row['name'];
+                            $product_image=$row['image'];
+                            $product_price=$row['price'];
                 ?>
-                    <tr>
-                        <td>1</td>
-                        <td>Image</td>
-                        <td>Laptop</td>
-                        <td>1200</td>
-                        <td>
-                            <a href="" class="delete_product_btn"><i class="fas fa-trash"></i></a>
-                            <a href="" class="update_product_btn"><i class="fas fa-edit"></i></a>
-                        </td>
-                    </tr>
+
+                <!-- Display table -->
+                
+                <tr>
+                    <td><?php echo $product_id ?></td>
+                    <td><img src="images/<?php echo $product_image ?>" alt="<?php echo $product_name ?>"></td>
+                    <td><?php echo $product_name ?></td>
+                    <td><?php echo $product_price ?></td>
+                    <td>
+                        <a href="" class="delete_product_btn"><i class="fas fa-trash"></i></a>
+                        <a href="" class="update_product_btn"><i class="fas fa-edit"></i></a>
+                    </td>
+                </tr>
+
+                <?php
+                     }
+                    }else{
+                        //Show if database is empty
+                        echo "No products available";
+                    }
+                ?>
                 </tbody>
             </table>
         </section>
