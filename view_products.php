@@ -32,6 +32,7 @@
                 <!-- php code -->
                 <?php
                     $display_product = mysqli_query($connection, 'Select * from `products`');
+                    $num = 1;
                     if(mysqli_num_rows($display_product)>0){
                         //logic to fetch data
                         while($row=mysqli_fetch_assoc($display_product)){
@@ -44,7 +45,7 @@
                 <!-- Display table -->
                 
                 <tr>
-                    <td><?php echo $product_id ?></td>
+                    <td><?php echo $num ?></td>
                     <td><img src="images/<?php echo $product_image ?>" alt="<?php echo $product_name ?>"></td>
                     <td><?php echo $product_name ?></td>
                     <td><?php echo $product_price ?></td>
@@ -55,6 +56,7 @@
                 </tr>
 
                 <?php
+                        $num++; 
                      }
                     }else{
                         //Show if database is empty
